@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="Complemento do Trabalho form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <hr>
+
+    <form name="Exemplo" action="#" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" size="40"><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" maxlength="8"><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" step="0.5" min="0" max="0"><br>
+
+        <label for="estciv">Estado Civil:</label>
+        <select name="estciv" id="estciv">
+            <option value=""></option>
+            <option value="cs">Casado</option>
+            <option value="sr">Solteiro</option>
+            <option value="dc">Divorciado</option>
+            <option value="pn">Pensando</option>
+        </select><br>
+
+        <h3>Transporte</h3>
+        <label for="carro">Carro</label>
+        <input type="checkbox" name="carro" id="carro" value="car">
+        <label for="moto">Moto</label>
+        <input type="checkbox" name="moto" id="moto" value="moto"><br>
+
+        <h3>Sexo</h3>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="sexo" id="masc" value="M">
+        <label for="fem">Feminino</label>
+        <input type="radio" name="sexo" id="fem" value="F">
+
+        <label for="msg">Mensagem:</label>
+        <textarea name="msg" id="msg" rows="5" cols="50"></textarea><br>
+
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+</body>
+</html>
